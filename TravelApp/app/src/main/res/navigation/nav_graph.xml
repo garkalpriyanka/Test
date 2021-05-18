@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.travelapp.view.Fragment.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_navDrawerFragment2"
+            app:destination="@id/navDrawerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.travelapp.view.Fragment.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration">
+        <action
+            android:id="@+id/action_registrationFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.travelapp.view.Fragment.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/navDrawerFragment"
+        android:name="com.example.travelapp.view.Fragment.NavDrawerFragment"
+        android:label="fragment_nav_drawer"
+        tools:layout="@layout/fragment_nav_drawer">
+        <action
+            android:id="@+id/action_navDrawerFragment_to_myTripFragment"
+            app:destination="@id/myTripFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.example.travelapp.view.Fragment.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.travelapp.view.Fragment.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/myFriendsFragment"
+        android:name="com.example.travelapp.view.Fragment.MyFriendsFragment"
+        android:label="fragment_my_friends"
+        tools:layout="@layout/fragment_my_friends" />
+    <fragment
+        android:id="@+id/destinationFragment"
+        android:name="com.example.travelapp.view.Fragment.DestinationFragment"
+        android:label="fragment_destination"
+        tools:layout="@layout/fragment_destination" />
+    <fragment
+        android:id="@+id/myTripFragment"
+        android:name="com.example.travelapp.view.Fragment.MyTripFragment"
+        android:label="fragment_my_trip"
+        tools:layout="@layout/fragment_my_trip">
+        <action
+            android:id="@+id/action_myTripFragment_to_tripListFragment"
+            app:destination="@id/tripListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tripListFragment"
+        android:name="com.example.travelapp.view.Fragment.TripListFragment"
+        android:label="fragment_trip_list"
+        tools:layout="@layout/fragment_trip_list">
+        <argument
+            android:name="ArgType"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/travelFragment"
+        android:name="com.example.travelapp.view.Fragment.TravelFragment"
+        android:label="fragment_travel"
+        tools:layout="@layout/fragment_travel" />
+    <fragment
+        android:id="@+id/passDataFragment"
+        android:name="com.example.travelapp.view.Fragment.PassDataFragment"
+        android:label="fragment_pass_data"
+        tools:layout="@layout/fragment_pass_data">
+        <action
+            android:id="@+id/action_passDataFragment_to_receiveDataFragment"
+            app:destination="@id/receiveDataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/receiveDataFragment"
+        android:name="com.example.travelapp.view.Fragment.ReceiveDataFragment"
+        android:label="fragment_receive_data"
+        tools:layout="@layout/fragment_receive_data">
+        <argument
+            android:name="message"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/finalCityInfoFragment"
+        android:name="com.example.travelapp.view.Fragment.FinalCityInfoFragment"
+        android:label="fragment_final_city_info"
+        tools:layout="@layout/fragment_final_city_info">
+        <action
+            android:id="@+id/action_finalCityInfoFragment_to_mapFragmet"
+            app:destination="@id/mapFragmet" />
+        <action
+            android:id="@+id/action_finalCityInfoFragment_to_clinicFragment"
+            app:destination="@id/clinicFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragmet"
+        android:name="com.example.travelapp.view.Fragment.MapFragmet"
+        android:label="fragment_map_fragmet"
+        tools:layout="@layout/fragment_map_fragmet" />
+    <fragment
+        android:id="@+id/clinicFragment"
+        android:name="com.example.travelapp.view.Fragment.ClinicFragment"
+        android:label="fragment_clinic"
+        tools:layout="@layout/fragment_clinic" />
+</navigation>
