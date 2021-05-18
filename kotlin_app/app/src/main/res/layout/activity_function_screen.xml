@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activities.FunctionScreen">
+
+        <ImageView
+        android:id="@+id/imageView"
+        android:background="@color/colorAccent"
+        android:layout_width="218dp"
+        android:layout_height="177dp">
+
+    </ImageView>
+        <ImageView
+            android:id="@+id/imageView1"
+            android:background="@color/colorPrimary"
+            android:layout_width="218dp"
+            android:layout_height="177dp">
+
+        </ImageView>
+
+        <Button
+        android:id="@+id/btnPalatte"
+        android:text="Palatte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </Button>
+        <Button
+            android:id="@+id/btnPalatteKTX"
+            android:text="Palatte KTX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+    </LinearLayout>
+</layout>

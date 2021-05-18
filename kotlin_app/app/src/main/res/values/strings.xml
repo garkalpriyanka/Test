@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">kotlin_app</string>
+    <string name="login_success">login successfull</string>
+    <string name="login_failed">login failed</string>
+
+    <string name="name">Enter valid name</string>
+    <string name="username">Enter valid username</string>
+    <string name="password">Enter valid password</string>
+    <string name="cpassword">password not matching</string>
+
+
+</resources>

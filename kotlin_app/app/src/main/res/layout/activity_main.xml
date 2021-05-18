@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="userModel"
+            type="com.example.kotlin_app.MainActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+<Button
+    android:id="@+id/btnlogin"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Login"
+    >
+</Button>
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registration"
+            >
+        </Button>
+        <Button
+            android:id="@+id/btnGoToFunctionScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Go To Function Screen"
+            >
+        </Button>
+        <Button
+            android:id="@+id/btnGoToInterpolabilityScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Go To Interpolability Screen"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/btnGoToInheritanceScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Go To Inheritance Screen"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/btnGotToAnko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Go To Anko Screen"
+            >
+        </Button>
+    </LinearLayout>
+</layout>
